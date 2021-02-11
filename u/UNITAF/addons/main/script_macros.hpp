@@ -33,3 +33,4 @@
 #define QMAIN_ADDON QUOTE(MAIN_ADDON)
 
 #define ACEFUNC(var1,var2) TRIPLES(DOUBLES(ace,var1),fnc,var2)
+#define LINKFUNC(var1) {_this call FUNC(var1)}
