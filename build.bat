@@ -1,4 +1,10 @@
 @echo off
-hemtt.exe build -vvv
-hemtt.exe release
-pause
+
+if "%1"=="debug" (
+    hemtt.exe build -vvv
+) ELSE (
+    hemtt.exe build
+)
+if "%1"=="release" (
+    hemtt.exe release
+)
